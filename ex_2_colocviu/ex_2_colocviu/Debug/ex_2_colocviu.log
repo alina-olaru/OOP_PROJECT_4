@@ -1,0 +1,27 @@
+﻿  Restaurant.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\include\xstddef(127,22): error C2676: binary '<': 'const _Ty' does not define this operator or a conversion to a type acceptable to the predefined operator
+          with
+          [
+              _Ty=Angajat
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\include\xstddef(126): message : while compiling class template member function 'bool std::less<Angajat>::operator ()(const _Ty &,const _Ty &) const'
+          with
+          [
+              _Ty=Angajat
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\include\xutility(1483): message : see reference to function template instantiation 'bool std::less<Angajat>::operator ()(const _Ty &,const _Ty &) const' being compiled
+          with
+          [
+              _Ty=Angajat
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\include\xmemory(1318): message : see reference to class template instantiation 'std::less<Angajat>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\include\xmemory(1318): message : see reference to variable template 'const bool is_empty_v<std::less<Angajat> >' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\include\map(75): message : see reference to class template instantiation 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=Angajat,
+              _Ty=std::vector<Comanda,std::allocator<Comanda>>,
+              _Pr=std::less<Angajat>,
+              _Alloc=std::allocator<std::pair<const Angajat,std::vector<Comanda,std::allocator<Comanda>>>>
+          ]
+C:\Users\olaru\source\repos\ex_2_colocviu\ex_2_colocviu\Restaurant.h(12): message : see reference to class template instantiation 'std::map<Angajat,std::vector<Comanda,std::allocator<Comanda>>,std::less<Angajat>,std::allocator<std::pair<const Angajat,std::vector<Comanda,std::allocator<Comanda>>>>>' being compiled
