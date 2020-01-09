@@ -20,9 +20,12 @@ class Comanda
 	int zi;
 	int luna;
 	int an;
+	int suma = 0;
 public:
 
 
+	int get_suma() const;
+	void set_suma(int suma);
 	vector<Produs_comandat> get_produs_comandat() const;
 	void set_produs_comandat(vector<Produs_comandat> produs_comandats);
 	Comanda();

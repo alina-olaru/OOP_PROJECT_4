@@ -36,5 +36,14 @@ public:
 	void set_bonus(float bonus);
 	void citire();
 	void afis();
+
+	friend bool operator<(const Angajat& lhs, const Angajat& rhs);
+	friend std::ostream& operator <<(std::ostream& out, Angajat& ang);
+//	friend bool operator<=(const Angajat& lhs, const Angajat& rhs);
+//
+//	friend bool operator>(const Angajat& lhs, const Angajat& rhs);
+//
+//	friend bool operator>=(const Angajat& lhs, const Angajat& rhs);
+//
 };
 

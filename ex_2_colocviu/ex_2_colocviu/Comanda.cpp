@@ -33,6 +33,16 @@ Comanda operator+(Comanda com, int num) {
 
 }
 
+int Comanda::get_suma() const
+{
+	return suma;
+}
+
+void Comanda::set_suma(int suma)
+{
+	this->suma = suma;
+}
+
 vector<Produs_comandat> Comanda::get_produs_comandat() const
 {
 	return produs_comandat;
@@ -118,6 +128,7 @@ float Comanda::nota_plata()
 		float rez = nr_por * pret;
 		suma = suma + rez;
 	}cout << "\nSuma cheltuita: " << suma;
+	this->suma = suma;
 	return suma;
 }
 

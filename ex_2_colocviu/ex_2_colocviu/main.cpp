@@ -4,6 +4,7 @@
 #include "Comanda.h"
 #include <istream>
 #include <ostream>
+#include "Restaurant.h"
 using namespace std;
 
 
@@ -72,7 +73,7 @@ int main()
 	C1++;
 	cout << C1;*/
 
-	Comanda com;
+	/*Comanda com;
 	com.citire_produs_comandat();
 	com.afis();
 	com.nota_plata();
@@ -84,6 +85,10 @@ int main()
 	cout << endl << endl << endl << endl;
 	com.adauga_produs_comanda();
 	cout << endl << endl << endl << endl;
-	com.sterge_ultima_comanda();
+	com.sterge_ultima_comanda();*/
+
+	Restaurant res;
+	res.citire();
+	res.afis();
 
 }

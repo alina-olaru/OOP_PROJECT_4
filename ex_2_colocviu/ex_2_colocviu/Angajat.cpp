@@ -110,3 +110,58 @@ void Angajat::afis()
 	cout << "\nNr comenzi ";
 	cout << this->nr_comenzi;
 }
+
+bool operator<(const Angajat& lhs, const Angajat& rhs)
+{
+	if (lhs.nume < rhs.nume)
+		return true;
+	if (rhs.nume < lhs.nume)
+		return false;
+	if (lhs.ani_vechime < rhs.ani_vechime)
+		return true;
+	if (rhs.ani_vechime < lhs.ani_vechime)
+		return false;
+	if (lhs.salariu < rhs.salariu)
+		return true;
+	if (rhs.salariu < lhs.salariu)
+		return false;
+	if (lhs.bonus < rhs.bonus)
+		return true;
+	if (rhs.bonus < lhs.bonus)
+		return false; 
+	if (lhs.nr_comenzi < rhs.nr_comenzi)
+		return true;
+	if (rhs.nr_comenzi < lhs.nr_comenzi)
+		return false;
+	return lhs.suma_incasata_comenzi < rhs.suma_incasata_comenzi;
+}
+//
+//bool operator<=(const Angajat& lhs, const Angajat& rhs)
+//{
+//	return !(rhs < lhs);
+//}
+//
+//bool operator>(const Angajat& lhs, const Angajat& rhs)
+//{
+//	return rhs < lhs;
+//}
+//
+//bool operator>=(const Angajat& lhs, const Angajat& rhs)
+//{
+//	return !(lhs < rhs);
+//}
+
+std::ostream& operator<<(std::ostream& out, Angajat& ang)
+{
+	out << "\nNume: ";
+	out << ang.get_nume();
+	out << "\nAni vechime ";
+	out << ang.get_ani_vechime();
+	out << "\nSalariu: ";
+	out << ang.get_salariu();
+	out << "\nbonus ";
+	out << ang.get_bonus();
+	out << "\nNr comenzi ";
+	out << ang.get_nr_comenzi();
+	return out;
+}
