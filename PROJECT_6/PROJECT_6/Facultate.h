@@ -2,6 +2,7 @@
 #include "domeniu.h"
 #include <iostream>
 using namespace std;
+#include <unordered_map>
 
  class Facultate
 {
@@ -13,6 +14,8 @@ private:
 	int nr_id;
 	float procent_taxa_a2a;
 	vector<domeniu> dom;
+	//unordered_map<vector<domeniu>, candidati> leg;
+ 	
 public:
  /*	static Facultate getInstanta()
  	{
